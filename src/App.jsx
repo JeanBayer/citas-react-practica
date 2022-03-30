@@ -6,11 +6,13 @@ function App() {
 
 
   return (
-   <>
-    <Header></Header>
-    <Formulario></Formulario>
-    <ListadoPacientes></ListadoPacientes>
-   </>
+   <div className="container mx-auto">
+      <Header></Header>
+      <div className="md:flex mt-12 mx-5">
+          <Formulario></Formulario>
+          <ListadoPacientes></ListadoPacientes>
+      </div>
+   </div>
   )
 }
 
