@@ -1,10 +1,15 @@
+import Header from "./components/Header"
+import Formulario from "./components/Formulario"
+import ListadoPacientes from "./components/ListadoPacientes"
 
 function App() {
 
 
   return (
    <>
-    <h1>Hola Mundo</h1>
+    <Header></Header>
+    <Formulario></Formulario>
+    <ListadoPacientes></ListadoPacientes>
    </>
   )
 }
