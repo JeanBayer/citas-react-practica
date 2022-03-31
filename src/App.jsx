@@ -14,7 +14,7 @@ function App() {
           pacientes={pacientes}
           setPacientes={setPacientes}
         ></Formulario>
-        <ListadoPacientes></ListadoPacientes>
+        <ListadoPacientes pacientes={pacientes}></ListadoPacientes>
       </div>
     </div>
   );

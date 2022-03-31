@@ -9,6 +9,12 @@ const Formulario = ({ pacientes, setPacientes }) => {
   const [sintomas, setSintomas] = useState("");
   const [error, setError] = useState(false);
 
+  const generarId = () => {
+    const id = Math.random().toString(36).substring(2) + new Date().getTime().toString(36);
+    console.log(id);
+    return id;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -23,6 +29,7 @@ const Formulario = ({ pacientes, setPacientes }) => {
       email,
       fecha,
       sintomas,
+      id: generarId(),
     };
 
     setPacientes([...pacientes, objetoPaciente]);
